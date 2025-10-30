@@ -14,10 +14,12 @@ useEffect(() => {
     
 }, [])
 
+
 return (
     <div>
-    <p>{isLoading? "Loading..." : null}</p>    
+      {isLoading? <p>Loading...</p> :  
     <img src={image} alt="A Random Dog"/>
+      }
     </div>
 )
 
